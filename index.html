@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrapwatch -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cosmo/bootstrap.min.css"
+        integrity="sha384-5QFXyVb+lrCzdN228VS3HmzpiE7ZVwLQtkt+0d9W43LQMzz4HBnnqvVxKg6O+04d" crossorigin="anonymous">
+    <!-- ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- icon botstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="glob1"></div>
+        <div class="glob2"></div>
+        <div class="glob3" id="glob3"></div>
+        <div class="glob4 rotates"></div>
+        <div class="glob5 rotates"></div>
+        <div class="glob6 rotates"></div>
+        <div class="glob7 rotates"></div>
+        <div class="glob8" id="glob8"></div>
+        <div class="glob9" id="glob9"></div>
+        <div class="glob10" id="glob10"></div>
+        <div class="glob11" id="glob11"></div>
+        <div class="glob12" id="glob12"></div>
+        <div class="glob13" id="glob13"></div>
+        <div class="glob14" id="glob14"></div>
+        <div class="glob15" id="glob15"></div>
+
+        <div class="section-header">
+            header
+        </div>
+        <div class="section-front">
+            <div class="front-title">
+                <div class="rec1"></div>
+                <div class="rec2"></div>
+                <div class="rec3"></div>
+                <div class="rec4"></div>
+                <div class="rec5"></div>
+                <div class="rec6"></div>
+                <div class="rec7"></div>
+                <div class="rec8"></div>
+
+                <h1>hi i'm jean pierre,</h1>
+                <h1>i'm full stack developer </h1>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, assumenda. Nihil adipisci facere
+                    repellat, iste repellendus non officia! Nostrum eveniet a fuga beatae possimus consectetur quam
+                    dolore eaque doloremque architecto.</span>
+                <a href="./back.html" class="btn btn-danger"><i class="bi bi-person-circle"></i>&nbsp;
+                    Profile</a>
+            </div>
+            <div class="front-image">
+                <div class="content-image">
+                    <img src="./image/image-portada.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="section-footer">footer</div>
+
+    </section>
+
+
+    <script>
+        var cursor = $('#glob8');
+        var cursor2 = $('#glob9');
+        var cursor3 = $('#glob10');
+        var cursor4 = $('#glob3');
+        var cursor5 = $('#glob11');
+        var cursor6 = $('#glob12');
+        var cursor7 = $('#glob13');
+        var cursor8 = $('#glob14');
+        var cursor9 = $('#glob15');
+
+        document.addEventListener('mousemove', function (e) {
+            cursor.css('left', e.clientX).css('top', e.clientY);
+            cursor2.css('left', e.clientX).css('top', e.clientY);
+            cursor3.css('left', e.clientX).css('top', e.clientY);
+            cursor4.css('height', (e.clientY - 0));
+            cursor5.css('height', (e.clientY - 100));
+            cursor6.css('height', (e.clientY - 200));
+
+            cursor7.css('height', (e.clientY - 100));
+            cursor8.css('height', (e.clientY - 0));
+            cursor9.css('height', (e.clientY - 200));
+        })
+    </script>
+
+</body>
+
+</html>
